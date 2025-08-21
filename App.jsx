@@ -9,7 +9,7 @@ import './App.css'
 // ===============================================
 
 // Gemini API 호출을 위한 상수
-const GEMINI_API_KEY = "AIzaSyDP5uYwEVTaUbENeBEr0imqzFzJpCubcfc";
+const GEMINI_API_KEY = "";
 const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent";
 
 /**
