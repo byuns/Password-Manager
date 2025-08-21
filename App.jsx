@@ -12,7 +12,6 @@ import './App.css'
 const GEMINI_API_KEY = "AIzaSyDP5uYwEVTaUbENeBEr0imqzFzJpCubcfc";
 const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent";
 
-
 /**
  * 비밀번호 잠금 해제를 위한 핀 번호.
  * 핀 번호를 직접 노출하는 것은 보안상 좋지 않으므로, 실제 앱에서는 서버에서 관리해야 합니다.
@@ -558,7 +557,7 @@ function App() {
                   </button>
                   <span className="tooltip">AI Smart Search</span>
                 </div>
-                <div className="relative group">
+                <div className="relative group rm-2">
                   <button onClick={() => { setSearchTerm(''); setAiMessage(''); }} className="icon-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.061 10.292a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.992v4.992" />
@@ -579,7 +578,6 @@ function App() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                   </svg>
                 </button>
-                <span className="tooltip">Add New Password</span>
               </div>
             </div>
 
@@ -694,7 +692,7 @@ function App() {
           body {
             font-family: 'Inter', sans-serif;
           }
-          
+            
           /* 컨테이너의 높이와 너비를 고정합니다. */
           .app-container {
             height: 600px; 
@@ -728,7 +726,7 @@ function App() {
 
           .icon-btn:hover, .add-icon-btn:hover {
             background-color: var(--primary-hover-color);
-            transform: scale(1.1);
+            // transform: scale(1.1);
           }
 
           .add-icon-btn {
